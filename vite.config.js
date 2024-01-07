@@ -6,6 +6,9 @@ import checker from 'vite-plugin-checker';
 // ----------------------------------------------------------------------
 
 export default defineConfig({
+  define: {
+    'process.env': {},
+  },
   plugins: [
     react(),
     checker({

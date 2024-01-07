@@ -20,7 +20,7 @@ import { bgGradient } from 'src/theme/css';
 
 import Iconify from 'src/components/iconify';
 
-const url = process.env.REACT_APP_POCKETBASE_URL;
+const url = import.meta.env.VITE_POCKETBASE_URL;
 const pb = new PocketBase(url);
 
 // ----------------------------------------------------------------------
