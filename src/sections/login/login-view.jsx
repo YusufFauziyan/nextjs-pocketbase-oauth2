@@ -20,7 +20,8 @@ import { bgGradient } from 'src/theme/css';
 
 import Iconify from 'src/components/iconify';
 
-const pb = new PocketBase('http://localhost:8090');
+const url = process.env.NEXT_POCKETBASE_URL;
+const pb = new PocketBase(url);
 
 // ----------------------------------------------------------------------
 
